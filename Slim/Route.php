@@ -420,7 +420,7 @@ class Route
         if (substr($m[0], -1) === '+') {
             $this->paramNamesPath[$m[1]] = 1;
 
-            return '(?P<' . $m[1] . '>.+)';
+            return '(?P<' . $m[1] . '>.*)';
         }
 
         return '(?P<' . $m[1] . '>[^/]*)';
